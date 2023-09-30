@@ -1,29 +1,31 @@
-<body>
-  
-    <table id="maintable">
-      <tr><td colspan="4"><input type="text" style="width: 99%;height: 100%; font-size: 120%;"></td></tr>
-      <tr>
-        <td><button>7</button></td>
-        <td><button>8</button></td>
-        <td><button>9</button></td>
-        <td><button>+</button></td>
-      </tr>
-      <tr>
-        <td><button>4</button></td>
-        <td><button>5</button></td>
-        <td><button>6</button></td>
-        <td><button>-</button></td>
-      </tr>
-      <tr>
-        <td><button>1</button></td>
-        <td><button>2</button></td>
-        <td><button>3</button></td>
-        <td><button>x</button></td>
-      </tr>
-      <tr>
-        <td colspan="3"><button>0</button></td>
-        <td><button>/</button></td>
-      </tr>
-    </table>
-</body>
+
+<table id="maintable">
+  <tr>
+    <td colspan="4">
+      <input type="number" style="width: 99%;height: 100%; font-size: 120%;" [(ngModel)]="term">
+    </td>
+  </tr>
+  <tr>
+    <td><input type="button" (click) = "term = term + 7" value ="7"></td>
+    <td><input type="button" (click) = "term = term + 8" value ="8"></td>
+    <td><input type="button" (click) = "term = term + 9" value ="9"></td>
+    <td><input type="button"  value ="+"></td>
+  </tr>
+  <tr>
+    <td><input type="button" (click) = "term = term + 4" value ="4"></td>
+    <td><input type="button" (click) = "term = term + 5" value ="5"></td>
+    <td><input type="button" (click) = "term = term + 6" value ="6"></td>
+    <td><input type="button"  value ="-"></td>
+  </tr>
+  <tr>
+    <td><input type="button" (click) = "term = term + 1" value ="1"></td>
+    <td><input type="button" (click) = "term = term + 2" value ="2"></td>
+    <td><input type="button" (click) = "term = term + 3" value ="3"></td>
+    <td><input type="button"  value ="x"></td>
+  </tr>
+  <tr>
+    <td colspan="3"><input type="button" (click) = "term = term + 0" value ="0"></td>
+    <td><input type="button"  value ="/"></td>
+  </tr>
+</table>
 
