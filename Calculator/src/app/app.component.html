@@ -1,4 +1,4 @@
-<body (click)="clickdetected()">
+<body>
   <table id="maintable">
     <!--<tr>
       <td colspan="4">
@@ -7,32 +7,32 @@
     </tr>!-->
     <tr>
       <td colspan="4">
-        <input type="number" style="border: none;width: 99%;height: 100%; font-size: 120%;" [(ngModel)]="term" (mouseenter)="mouseonresult = true; " (mouseleave)="mouseonresult = false">
+        <input type="number" style="border: none;width: 99%;height: 100%; font-size: 120%;" [(ngModel)]="term" >
       </td>
     </tr>
     <tr>  
-      <td><input type="button" (click) = "addtermclick('7')" value ="7"></td>
-      <td><input type="button" (click) = "addtermclick('8')" value ="8"></td>
-      <td><input type="button" (click) = "addtermclick('9')" value ="9"></td>
-      <td><input type="button"  value ="+" (click) = "applyoperator('+')"></td>
+      <td><input type="button"  value ="7"></td>
+      <td><input type="button"  value ="8"></td>
+      <td><input type="button"  value ="9"></td>
+      <td><input type="button"  value ="+" ></td>
     </tr>
     <tr>
-      <td><input type="button" (click) = "addtermclick('4')" value ="4"></td>
-      <td><input type="button" (click) = "addtermclick('5')" value ="5"></td>
-      <td><input type="button" (click) = "addtermclick('6')" value ="6"></td>
-      <td><input type="button"  value ="-" (click) = "applyoperator('-')"></td>
+      <td><input type="button"  value ="4"></td>
+      <td><input type="button"  value ="5"></td>
+      <td><input type="button"  value ="6"></td>
+      <td><input type="button"  value ="-" ></td>
     </tr>
     <tr>
-      <td><input type="button" (click) = "addtermclick('1')" value ="1"></td>
-      <td><input type="button" (click) = "addtermclick('2')" value ="2"></td>
-      <td><input type="button" (click) = "addtermclick('3')" value ="3"></td>
-      <td><input type="button"  value ="x" (click) = "applyoperator('x')"></td>
+      <td><input type="button"  value ="1"></td>
+      <td><input type="button"  value ="2"></td>
+      <td><input type="button"  value ="3"></td>
+      <td><input type="button"  value ="x" ></td>
     </tr>
     <tr>
-      <td><input type="button" (click) = "addtermclick('0')" value ="0"></td>
-      <td><input type="button" value ="C" (click) = "clear()"></td>
-      <td><input type="button" value = "=" (click) = "calculate()"></td>
-      <td><input type="button"  value ="/" (click) = "applyoperator('/')"></td>
+      <td><input type="button"  value ="0"></td>
+      <td><input type="button" value ="C" ></td>
+      <td><input type="button" value = "=" ></td>
+      <td><input type="button"  value ="/" ></td>
     </tr>
   </table>
   
